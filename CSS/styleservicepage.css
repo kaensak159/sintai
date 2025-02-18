@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+
+body{
+  height: auto;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+}
+*{
+  font-family: "Kanit", serif;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+
+
+.hero02-section{
+    margin: 60px 0px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.hero h1{
+    color: #2CAF21;
+}
+.hero02-section input{
+    margin: 20px 0px;
+    text-align: start;
+}
+
+
+
+.service-image{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+
+
+.service-image img{
+    object-fit: cover;
+    width: 100vw;
+    height: auto;
+
+}
+
+
+
+.category-card {
+    height: 100%;
+    transition: transform 0.3s;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.category-card:hover {
+    transform: translateY(-5px);
+}
+.category-img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+.card-body02{
+    padding: 25px;
+}
+.card-body02 h3{
+    color: #2CAF21;
+
+}
+
+.card-title {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.card-text {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.section-title {
+    color: #2E7D32;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #FFD700;
+}
+
+/*  */
+
+
+
+
+.content-03-service h2{
+
+    color: #2CAF21;
+    
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.category-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.category-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 0;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.category-item.active {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* เส้นคั่นระหว่างรายการ */
+.category-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 20px;
+    background-color: #ddd;
+}
+
+/* เส้นสีเขียวด้านล่าง */
+.indicator {
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    background-color: #4CAF50;
+    transition: all 0.3s ease;
+}
+
+/* เส้นสีเหลืองที่จะ animate */
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFC107;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover ~ .indicator::after,
+.category-item.active ~ .indicator::after {
+    transform: scaleX(1);
+}
+
+
+

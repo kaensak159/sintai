@@ -1,0 +1,171 @@
+.bg-image {
+    background:
+                url('../image/image02/allvege.png') center/cover;
+    min-height: 50vh;
+}
+.form-container {
+    max-width: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+
+.withus-button{
+    color: white;
+    padding: 5px 100px;
+    background-color: #2CAF21;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+
+.timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #FFD700;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -45px;
+    width: 32px;
+    height: 32px;
+    background: #FFD700;
+    border-radius: 50%;
+    transform: translateX(-15px);
+}
+
+.timeline-item {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.icon-container {
+    width: 80px;
+    height: 80px;
+}
+
+.registration-icon {
+    color: #4CAF50;
+    font-size: 2rem;
+}
+
+.fortimeline h1 {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.fortimeline h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.fortimeline p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+
+.search-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    border: 2px solid #FFE4B5;
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 16px;
+    background-color: white;
+}
+
+.search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #ccc;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 0 8px 8px 0;
+    color: white;
+    cursor: pointer;
+}
+
+.faq-title {
+    color: #4CAF50;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 8px !important;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: #333;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.accordion-body {
+    padding: 20px;
+    color: #666;
+    background-color: white;
+}
+
+.close-icon {
+    float: right;
+    cursor: pointer;
+    color: #999;
+    font-size: 20px;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%234CAF50'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
